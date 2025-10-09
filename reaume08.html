@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Resume</title>
+  <style>
+   
+    body{
+      background:#f7fafc;
+      margin:24px;
+      display:flex;
+      justify-content:center;
+      font-size:14px;
+      color:#111827;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    .resume{
+      width:100%;
+      max-width:800px;
+      background:#ffffff;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(15,23,42,0.08);
+      padding:20px;
+      box-sizing:border-box;
+    }
+    
+    .title{
+      text-align:center;
+      font-weight:700;
+      letter-spacing:1px;
+      color:#2b7a78;
+      font-size:20px;
+      margin-bottom:14px;
+    }
+    
+    .top-row{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:12px;
+    }
+    .left{
+      flex:1 1 0;
+    }
+    .name{
+      font-size:18px;
+      font-weight:700;
+      margin:0 0 6px 0;
+    }
+    .email{
+      margin:0;
+      color:#6b7280;
+      font-size:13px;
+    }
+    .right{
+      width:120px;
+      height:120px;
+      flex:0 0 120px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .image{
+      width:120px;
+      height:120px;
+      border-radius:8px;
+      object-fit:cover;
+      border:2px solid rgba(43,122,120,0.12);
+      background:linear-gradient(180deg,#eef6f6,#ffffff);
+    }
+    hr.section-sep{
+      border:0;
+      height:1px;
+      background-color: black;
+      margin:14px 0;
+    }
+    h3.section-title{
+      margin:8px 0 10px 0;
+      font-size:15px;
+      color:#0f172a;
+    }
+   
+    .academic .item{
+      margin-bottom:8px;
+    }
+    .academic .degree{
+      font-weight:600;
+      margin:0;
+    }
+    .academic .meta{
+      color:#6b7280;
+      font-size:13px;
+      margin:2px 0 0 0;
+    }
+    .skills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px 10px;
+    }
+    .skill-pill{
+      padding:6px 10px;
+      border-radius:999px;
+      background:rgba(43,122,120,0.08);
+      font-size:13px;
+      color:#2b7a78;
+    }
+    .personal dt{
+      font-weight:600;
+      margin-top:6px
+    }
+    .personal dd{
+      margin:2px 0 8px 0;
+      color:#6b7280
+    }
+    
+  </style>
+</head>
+<body>
+  <article class="resume">
+    <div class="title">RESUME</div>
+
+    <div class="top-row">
+      <div class="left">
+        <p class="name">Urvashi Patel</p>
+        <p class="email">urvashipatel87935@gmail.com</p>
+      </div>
+      <div class="right">
+       
+        <img class="image" src="my.jpeg" alt="Photo">
+      </div>
+    </div>
+
+    <hr class="section-sep">
+
+    <section class="academic">
+      <h3 class="section-title">Academic</h3>
+      <div class="item">
+        <p class="degree">Bachelor of Technology, Computer Science</p>
+        <p class="meta">Gyan Sagar College of Engineering Sagar — 2022 — 2026•  CGPA — 7.81</p>
+      </div>
+      <div class="item">
+        <p class="degree">Higher Secondary (Class 12)</p>
+        <p class="meta">Kids Academy Higher Seconday School Sagar - Percentage —  8.74%</p>
+      </div>
+      <div class="item">
+        <p class="degree">High School (Class 10)</p>
+        <p class="meta">Shri Jhulelal High School Sagar - Percentage —  8.72%</p>
+      </div>
+    </section>
+
+    <hr class="section-sep">
+
+    <section class="skills">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills" aria-hidden="false">
+        <span class="skill-pill">HTML</span>
+        <span class="skill-pill">CSS</span>
+        <span class="skill-pill">JavaScript</span>
+        <span class="skill-pill">PHP</span>
+        <span class="skill-pill">Mysql</span>
+        <span class="skill-pill">CodeIgniter 4</span>
+        
+        
+        
+      </div>
+    </section>
+
+    <hr class="section-sep">
+
+    <section class="personal">
+      <h3 class="section-title">Personal Details</h3>
+      <dl>
+         <dt>Hobbies</dt>
+        <dd>Dancing , Exploring new things</dd>
+        
+        <dt>Phone</dt>
+        <dd>+918319453477</dd>
+        <dt>Address</dt>
+        <dd> Subhash Nagar Sagar, MP — India</dd>
+      </dl>
+    </section>
+
+  </article>
+</body>
+</html>
