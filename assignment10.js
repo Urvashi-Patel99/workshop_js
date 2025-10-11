@@ -113,3 +113,4 @@ const user1 = [
    ];
 const newuser2 = {...user1}
 console.log(newuser2)
+console.log(newuser2)
