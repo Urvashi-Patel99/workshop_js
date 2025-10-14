@@ -1,29 +1,102 @@
-<html>
+  <html>
     <head>
         <title>Todo</title>
+        
         <style>
-            .container{
-                display: flex;
-                justify-content: space-between;
-            }
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #f3f1e7;
+        color: #120e2b;
+        margin: 0;
+        padding: 20px;
+    }
 
-            .column{
-                width: 300px;
-                height: 500px;
-                border-right: 1px solid black;
-                padding: 10px;
-                margin-top: 20px;
-            }
+    h1 {
+        text-align: center;
+        color: #4e473e;
+        margin-bottom: 10px;
+    }
 
-            .task{
-                display: flex;
-                justify-content: space-between;
-                border: 1px solid gray;
-                padding:5px;
-                margin-top: 5px;
+    form {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 10px;
+    }
 
-            }
-        </style>
+    input[type="text"] {
+        padding: 8px 12px;
+        border: 1px solid #5d0eef;
+        border-radius: 6px;
+        background-color: #fdfcf8;
+        outline: none;
+        width: 200px;
+        font-size: 14px;
+    }
+
+    input[type="text"]:focus {
+        border-color: #5c8b8b;
+    }
+
+    input[type="submit"] {
+        background-color: #41c6f6;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #1ea0cf;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .column {
+        width: 300px;
+        min-height: 500px;
+        background-color: #e2edf0;
+        border: 1px solid #3907dc;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .column h3 {
+        text-align: center;
+        color: #289e3e;
+        border-bottom: 2px solid #d9cbb0;
+        padding-bottom: 8px;
+        margin-bottom: 10px;
+    }
+
+    .task {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #3508d5;
+        background-color: #fdfbf5;
+        padding: 8px;
+        margin-top: 8px;
+        border-radius: 6px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .task:hover {
+        transform: scale(1.02);
+        background-color: #f8f5ed;
+    }
+</style>
+
         <script src="todoapp.js"></script>
     </head>
     <body>
@@ -50,3 +123,4 @@
         </div>
     </body>
 </html>
+  
