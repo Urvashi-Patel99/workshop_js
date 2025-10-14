@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+  
+  
+</head>
+<body>
+  <h1>Todo</h1>
+  <div id="container">
+    <form action="" onsubmit="addtask()">
+  <input type="text" placeholder="task">
+  <button type="submit">ADD</button>
+  </div>
+</form>
+  <div class="todolist">
+    
+    <div>column2</div>
+    <div>column2</div>
+    <div>column2</div>
+
+  </div>
+
+  <script>
+    //shallow copy 
+// const obj1 ={...obj}
+// const obj = JSON.parse()
+
+
+
+
+// const container = document.getElementById('container')
+// console.log(container)
+// container.innerHTML = "urvashi"
+// container.style.colour = "red" 
+
+const todo = []
+const addtask = ()=>{
+  event.preventDefault()
+  const task = event.target[0].value
+  todo.push(task)
+  event.target[0].value =''
+  console.log(todo)
+}
+
+const renderTodo = ()=>{
+  const todolist = document.getElementById('')
+}
+
+  </script>
+</body>
+
+</html>

@@ -2,10 +2,10 @@
   "name": "workshop_js",
   "version": "1.0.0",
   "description": "```sh\r Dom stands for document object model.\r Bom stands for browser object model.\r ```",
-  "main": "assignment10.js",
+  "main": "111025.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node --watch assignment10.js"
+    "start":"node --watch 111025.js"
   },
   "repository": {
     "type": "git",

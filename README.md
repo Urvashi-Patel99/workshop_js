@@ -38,4 +38,11 @@ window is a object have some specific properties :
            boolean,string,number,null,undefined
 
   non-primitive:-  
-  Arrays , object,  function        
+  Arrays , object,  function 
+
+## for creating object
+```sh 
+JSON.parse
+API's type:-get,post,update,delete
+
+```
